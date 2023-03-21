@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Company Name</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+  body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 , h3{
+  text-align: center;
+  font-size: 20px;
+}
+  /* Prompt Section Styles */
+.prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.qr-code img {
+  margin-bottom: 10px;
+}
+
+/* Payment Form Section Styles */
+.payment-form {
+  margin-top: 50px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.payment-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3E8E41;
+}
+.file-upload {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px;
+  border: 2px dotted #007bff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.file-upload:hover {
+  border-color: #fcb040;
+}
+
+.file-upload:focus-within {
+  outline: none;
+  border-color: #fcb040;
+}
+
+.file-upload i {
+  display: block;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.file-upload label {
+  display: block;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.submit-button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fcb040;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #f8a11b;
+}
+
+.submit-button:active {
+  transform: translateY(2px);
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-wrap: wrap;
+}
+
+.grid-item {
+	background-color: #fff;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+}
+
+.grid-item img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-top: 400px;
+}
+.logo11{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+</style>
+<body>
+	<nav>
+		<ul>
+		
+		  <li><img class = "logo11" src = "/20230318_102332_0000.png"><b><strong>Unique Ideastube</strong></b></li>
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/services.html">Services</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="/contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+<section class="prompt">
+  <div class="qr-code">
+    <h2>Unique Ideastube has requested payment of ₹ 51.0 for buying channel.<br> Click on paytm to pay.</h2>
+    <a href="https://paytm.me/K-EUBkd"> <img src="data:image/jpeg;base64,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" alt="QR Code">
+    </a>
+    <h3><strong>Note:</strong>After successful payment, Please ensure to take screenshot and submit in the form. <br><br> <strong>Scroll Down to fill the form</strong></h3>
+  </div>
+</section>
+
+<!-- Payment Form Section -->
+<section class="payment-form">
+  <h2>Payment Information</h2>
+  <form id="payment-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="product-number">Product Number:</label>
+      <input type="text" id="product-number" name="productNumber" required>
+    </div>
+    <div class="form-group file-upload">
+      <label for="payment-screenshot">
+        <i class="fas fa-cloud-upload-alt"></i>
+        Upload Payment Screenshot
+      </label>
+      <input type="file" id="payment-screenshot" name="paymentScreenshot" accept="image/*" required>
+    </div>
+    <button type="submit" class="submit-button">Submit Payment</button>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+<div>
+  <p>
+    <strong>You will get channel Gmail and Password within 1 hour after successful transaction.</strong>
+  </p>
+</div>
+</section>
+	<footer>
+		<p>Copyright © 2023 Unique Ideastube</p>
+	</footer>
+	<script>
+	   const nodemailer = require('nodemailer');
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.post('/submit-form', (req, res) => {
+  const { name, email, productNumber, amount } = req.body;
+  const paymentScreenshot = req.files.paymentScreenshot;
+
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: 'your_email@gmail.com', // your email
+      pass: 'your_password' // your password
+    }
+  });
+
+  // setup email data with unicode symbols
+  let mailOptions = {
+    from: '"Your Name" <your_email@gmail.com>', // sender address
+    to: 'recipient_email@example.com', // list of receivers
+    subject: 'Payment Confirmation', // Subject line
+    html: `
+      <p>Hello,</p>
+      <p>A payment has been made with the following details:</p>
+      <ul>
+        <li>Name: ${name}</li>
+        <li>Email: ${email}</li>
+        <li>Product Number: ${productNumber}</li>
+        <li>Amount: $${amount}</li>
+      </ul>
+    `,
+    attachments: [
+      {
+        filename: paymentScreenshot.name,
+        content: paymentScreenshot.data
+      }
+    ]
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send('Internal Server Error');
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.send('Payment submitted successfully');
+    }
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+
+	</script>
+</body>
+</html>
+
